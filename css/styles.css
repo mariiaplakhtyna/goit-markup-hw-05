@@ -591,7 +591,10 @@ background-color: #31d0aa;
     position: absolute;
     top: 24px;
     right: 24px;
-    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #e7e9fc;
     display: inline-flex;
@@ -601,22 +604,31 @@ background-color: #31d0aa;
     /* використовуємо currentColor для іконки */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button-icon {
-    fill: currentColor;
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button:hover,
+.close-button:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
 .close-button:focus {
     background: #404bbf;
     color: #ffffff;
     border-color: #404bbf;
     outline: none;
+    background-color: #404bbf;
+    border: none;
 }
 
 /* Поля форми + іконки в полях */
+.form-field {
+padding: 72px 24px 24px 24px;
+}
 .input-wrapper {
     position: relative;
 }
