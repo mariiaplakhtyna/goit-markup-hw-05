@@ -618,20 +618,25 @@ background-color: #31d0aa;
 /* Поля форми + іконки в полях */
 .input-wrapper {
     position: relative;
-    display: block;
 }
 
 .input {
     width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    height: 40px;
+    padding-left: 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding: 12px 16px 12px 38px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus {
+    outline: transparent;
     border-color: #4d5ae5;
-    outline: none;
 }
 
 .input-icon {
@@ -639,8 +644,7 @@ background-color: #31d0aa;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill: #2e2f42;
-    pointer-events: none;
+    fill: rgba(46, 47, 66, 0.4);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -652,32 +656,27 @@ background-color: #31d0aa;
     width: 100%;
     height: 120px;
     resize: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding: 12px 16px;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea:focus {
+    outline: transparent;
     border-color: #4d5ae5;
-    outline: none;
 }
 
-/* Чекбокс */
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(0 0 0 0) !important;
-    clip-path: inset(50%) !important;
-    width: 1px !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+/* чекбокс */
+.checkbox-input:checked+.checkbox-label .checkbox-box {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
 }
 
 .checkbox-box {
@@ -686,32 +685,31 @@ background-color: #31d0aa;
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    background: #fff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked+.checkbox-box {
-    background: #4d5ae5;
-    border-color: #4d5ae5;
+.policy-link {
+    color: #4d5ae5;
+    text-decoration: underline;
 }
 
-.checkbox-box svg {
-    fill: #fff;
-}
-
-/* Кнопка відправки */
+/* кнопка */
 .modal-submit {
     display: block;
-    margin: 24px auto 0;
     min-width: 169px;
     height: 56px;
+    margin: 0 auto;
+    background-color: #4d5ae5;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
-    background: #4d5ae5;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -719,6 +717,6 @@ background-color: #31d0aa;
 
 .modal-submit:hover,
 .modal-submit:focus {
-    background: #404bbf;
+    background-color: #404bbf;
 }
 
