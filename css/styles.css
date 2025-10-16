@@ -547,7 +547,10 @@ background-color: #31d0aa;
 /* Бекдроп */
 .backdrop {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
@@ -569,7 +572,7 @@ background-color: #31d0aa;
     left: 50%;
     width: 408px;
     min-height: 584px;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     border-radius: 4px;
     background: #fcfcfc;
     box-shadow:
@@ -580,7 +583,7 @@ background-color: #31d0aa;
 }
 
 .backdrop:not(.is-open) .modal {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
 /* Кнопка закриття */
@@ -588,9 +591,7 @@ background-color: #31d0aa;
     position: absolute;
     top: 24px;
     right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #e7e9fc;
     display: inline-flex;
