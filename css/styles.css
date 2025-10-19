@@ -608,7 +608,7 @@ background-color: #31d0aa;
 }
 
 .close-button-icon {
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover {
@@ -628,9 +628,7 @@ background-color: #31d0aa;
 /* Поля форми + іконки в полях */
 .form-field {
 padding: 72px 24px 24px 24px;
-}
-.input-wrapper {
-    position: relative;
+position: relative;
 }
 
 .input {
@@ -648,7 +646,7 @@ padding: 72px 24px 24px 24px;
 }
 
 .input:focus {
-    outline: transparent;
+    outline: none
     border-color: #4d5ae5;
 }
 
@@ -661,7 +659,7 @@ padding: 72px 24px 24px 24px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus+.input-icon {
+.input:focus + .input-icon {
     fill: #4d5ae5;
 }
 
@@ -681,7 +679,7 @@ padding: 72px 24px 24px 24px;
 }
 
 .textarea:focus {
-    outline: transparent;
+    outline: none;
     border-color: #4d5ae5;
 }
 
@@ -702,6 +700,9 @@ padding: 72px 24px 24px 24px;
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-icon {
+    fill: transparent;
 }
 
 .policy-link {
