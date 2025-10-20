@@ -633,13 +633,17 @@ border: 1px solid var(--white);
     visibility: visible;
     pointer-events: auto;
 }
-
+.modal:target {
+   opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+}
 /* Модалка */
 .modal {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    width: 408px;
+    width: min(90vw, 408px);
     min-height: 584px;
     transform: translate(-50%, -50%);
     border-radius: 4px;
@@ -649,6 +653,10 @@ border: 1px solid var(--white);
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(6px) scale(.98);
+}
+#modal:target .modal {
+    transform: translateY(0) scale(1);
 }
 
 .backdrop .is-open .modal {
@@ -660,18 +668,15 @@ border: 1px solid var(--white);
 /* Кнопка закриття */
 .modal-button {
     position: absolute;
-    
-  
-    padding: 0;
-    cursor: pointer;
-   padding: 0;
-    background: #e7e9fc;
-    
-  
-   
-    /* використовуємо currentColor для іконки */
-   background-color: #404bbf
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 8px;
+  right: 8px;
+    display: grid;
+    place-items: center;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+    background-color: #e7e9fc;
+    transition: background-color .25s;
 }
 
 .modal-button-icon {
@@ -680,7 +685,7 @@ border: 1px solid var(--white);
 }
 
 .modal-button:hover {
-    fill: #ffffff;
+    fill: #404bbf;
 }
 .modal-button:focus {
     border: none;
@@ -815,7 +820,7 @@ width: 100%;
 }
 
 .modal-submit:hover {
-    fill: #ffffff;
+    fill: #404bbf;
 }
 .modal-submit:focus {
     fill: #ffffff;
