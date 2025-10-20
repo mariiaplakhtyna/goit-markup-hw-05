@@ -628,17 +628,14 @@ border: 1px solid var(--white);
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
+.backdrop .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-.modal:target {
-   opacity: 1;
-    visibility: visible;
-    pointer-events: auto; 
-}
+
 /* Модалка */
+
 .modal {
     position: relative;
     top: 50%;
@@ -654,9 +651,6 @@ border: 1px solid var(--white);
         0 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(6px) scale(.98);
-}
-#modal:target .modal {
-    transform: translateY(0) scale(1);
 }
 
 .backdrop .is-open .modal {

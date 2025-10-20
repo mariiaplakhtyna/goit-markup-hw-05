@@ -45,7 +45,7 @@
         <section class="hero-section">
             <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <a href="#modal" class="primary-btn">Order Servise</a>
+            <button type="button" class="primary-btn" onclick="location.href='#modal'">Order Servise</button>
         </div>
         </section>
 
@@ -404,12 +404,14 @@
     </div>
 </footer>
 
-    <div id="modal" class="backdrop">
+    <div id="modal" class="backdrop is-open">
         <div class="modal">
             <button  class="modal" type="button">
+                <a href="#" class="modal-button" aria-label="Close modal">
                 <svg class="modal-button-icon" width="8" height="8" arria-hidden="true">
                     <use href="./images/icons.svg#icon-close-back"></use>
                 </svg>
+                </a>
             </button>
     <p class="modal-text">Leave your contacts and we will call you back</p>
 
