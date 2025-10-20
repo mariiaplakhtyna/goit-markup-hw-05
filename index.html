@@ -45,7 +45,7 @@
         <section class="hero-section">
             <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="primary-btn" onclick="location.href='#modal'">Order Servise</button>
+            <button type="button" class="primary-btn" onclick="location.hash='#modal'">Order Servise</button>
         </div>
         </section>
 
@@ -406,13 +406,11 @@
 
     <div id="modal" class="backdrop is-open">
         <div class="modal">
-            <button  class="modal" type="button">
-                <a href="#" class="modal-button" aria-label="Close modal">
+             <a href="#" class="modal-button" aria-label="Close modal"></a>
                 <svg class="modal-button-icon" width="8" height="8" arria-hidden="true">
                     <use href="./images/icons.svg#icon-close-back"></use>
                 </svg>
                 </a>
-            </button>
     <p class="modal-text">Leave your contacts and we will call you back</p>
 
             <form class="modal-form" name="callback" autocomplete="off">
