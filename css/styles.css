@@ -582,12 +582,14 @@ background-color: #31d0aa;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop:not(.is-open) .modal {
+.backdrop .is-open .modal {
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1.5);
+    transition-delay: 250ms;
 }
 
 /* Кнопка закриття */
-.close-button {
+.modal-button {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -595,34 +597,36 @@ background-color: #31d0aa;
     height: 24px;
     border-radius: 50%;
     padding: 0;
+    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #e7e9fc;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: #2e2f42;
     /* використовуємо currentColor для іконки */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button-icon {
-    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-button-icon {
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   fill: #2e2f42;
 }
 
-.close-button:hover {
+.modal-button:hover,
+.modal-button:focus {
     background-color: #404bbf;
     border: none;
-    fill: #ffffff;
 }
-.close-button:focus {
-    background: #404bbf;
-    color: #ffffff;
-    border-color: #404bbf;
-    outline: none;
-    background-color: #404bbf;
-    border: none;
+.modal-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--navy-blue);
 }
 
 /* Поля форми + іконки в полях */
@@ -697,7 +701,9 @@ position: relative;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-icon {
