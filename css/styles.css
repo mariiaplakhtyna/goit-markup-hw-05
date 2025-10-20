@@ -543,7 +543,30 @@ background-color: #31d0aa;
 .footer-socials-icon {
    fill: #f4f4fd;
 }
-.form-text {
+.form-container {
+width: 453px;
+    height: 80px;
+}
+.container-form-container {
+border: 1px solid var(--white);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.btm-form-subscribe {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 4px;
+        padding: 8px 24px;
+        width: 165px;
+        height: 40px;
+        background: var(--iris);
+}
+.form-container-text {
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -551,9 +574,7 @@ background-color: #31d0aa;
     letter-spacing: 0.02em;
     color: #ffffff;
 }
-.form-left {
-    display: flex;
-}
+
 /* Бекдроп */
 .backdrop {
     position: fixed;
@@ -708,7 +729,7 @@ position: relative;
     line-height: 1.17;
     outline: transparent;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4)
+    color: rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
