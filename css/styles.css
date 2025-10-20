@@ -466,12 +466,9 @@ padding: 100px 0;
 }
 .footer-container {
     display: flex;
-    align-items: flex-start;
     align-items: baseline;
-}
-.footer-left {
-    max-width: 264px;
-    margin-right: 120px;
+    justify-content: space-between;
+    gap: 72px;
 }
 
 .footer-logo {
@@ -486,8 +483,8 @@ padding: 100px 0;
     font-size: 18px;
 }
 
-.footer-logo .logo-parts {
-    color: #f4f4fd;  
+.footer-logo .logo-part {
+    color: #f4f4fd;
 }
 
 .footer-text {
@@ -543,10 +540,16 @@ background-color: #31d0aa;
 .footer-socials-icon {
    fill: #f4f4fd;
 }
-.form-container {
-width: 453px;
-    height: 80px;
+.form-container-text {
+margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: left;
 }
+
 .container-form-container {
 border: 1px solid var(--white);
     border-radius: 4px;
@@ -554,27 +557,55 @@ border: 1px solid var(--white);
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.btm-form-subscribe {
-display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 16px;
-    border-radius: 4px;
-        padding: 8px 24px;
-        width: 165px;
-        height: 40px;
-        background: var(--iris);
+.footer-form {
+    display: flex;
+    gap: 24px;
 }
-.form-container-text {
-    margin-bottom: 16px;
-    font-weight: 500;
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    color: #ffffff;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
+}
+
+.footer-input::placeholder {
     color: #ffffff;
 }
 
+.btn-form-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background-color: var(--iris);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-form-subscribe:hover,
+.btn-form-subscribe:focus {
+    background-color: #31d0aa;
+}
+
+.icon-send {
+    fill: #ffffff;
+}
 /* Бекдроп */
 .backdrop {
     position: fixed;
