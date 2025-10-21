@@ -392,7 +392,7 @@
             <p class="form-container-text">Subscribe</p>
             <form class="footer-form">
                 <label class="visually-hidden" for="user-email">E-mail
-                <input class="footer-input" type="email" placeholder="E-mail" />
+                <input class="footer-input" type="email" name="user-email" placeholder="E-mail" />
             </label>
                 <button type="submit" class="btn-form-subscribe">
                     Subscribe
@@ -408,12 +408,10 @@
 <!-- backdrop -->
     <div id="modal" class="backdrop">
         <div class="modal">
-            <button  class="modal" type="button">
-                <div  class="modal-button">
+            <button  class="modal-button" type="button" aria-label="Close modal">
                 <svg class="modal-button-icon" width="8" height="8" arria-hidden="true">
-                
+                    <use href="./images/icons.svg#icon-close-back"></use>
                 </svg>
-                </div>
             </button>
     <p class="modal-text">Leave your contacts and we will call you back</p>
 
@@ -495,7 +493,6 @@
       <a class="policy-link" href="#">Privacy Policy</a>
     </label>
   </div>
-
   <button class="modal-submit" type="submit">Send</button>
   
 </form>
