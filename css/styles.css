@@ -675,16 +675,19 @@ border: 1px solid var(--white);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #404bbf;
+    border: none;
+}
 
 .modal-button-icon {
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   fill: #2e2f42;
+   fill: currentColor;
 }
 
-.modal-button:hover {
-    fill: #ffffff;
-}
-.modal-button:focus {
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
     fill: #ffffff;
 }
 .modal-text {
@@ -701,8 +704,10 @@ border: 1px solid var(--white);
 .form-field {
 padding: 72px 24px 24px 24px;
 position: relative;
-margin-bottom: 16px;
+margin-bottom: 8px;
+width: 100%;
 }
+
 .form-label {
     font-size: 12px;
     line-height: 1.17;
@@ -748,8 +753,14 @@ margin-bottom: 16px;
 
 }
 
-.input:focus + .input-icon {
-    fill: #4d5ae5;
+.input:focus {
+    background-color: #4d5ae5;
+    outline: transparent;
+}
+
+.textarea:focus {
+background-color: #4d5ae5;
+    outline: transparent;
 }
 
 .textarea {
@@ -783,7 +794,7 @@ margin-bottom: 16px;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.input:checked + .checkbox {
+.checkbox-input:checked + .checkbox-label .checkbox-box {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -809,6 +820,7 @@ margin-bottom: 16px;
 
 .policy-link {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 /* кнопка */
