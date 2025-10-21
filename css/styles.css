@@ -713,13 +713,14 @@ margin-bottom: 8px;
     color: #8e8f99;
     margin-bottom: 4px;
 }
+
 .form-field .input-wrapper {
     position: relative;
     margin-bottom: 8px;
 }
 
-.form-field .textarea {
-    width: 100%;
+.form-field-comment {
+    margin-bottom: 16px;
 }
 
 .input {
