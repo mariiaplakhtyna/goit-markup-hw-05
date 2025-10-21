@@ -704,7 +704,7 @@ border: 1px solid var(--white);
 .form-field {
 padding: 72px 24px 24px 24px;
 position: relative;
-margin-bottom: 8px;
+margin-bottom: 16px;
 width: 100%;
 }
 
@@ -754,10 +754,13 @@ width: 100%;
 }
 
 .input:focus {
-    background-color: #4d5ae5;
+    border-color: #4d5ae5;
     outline: transparent;
 }
 
+.input:focus + .input-icon {
+    fill: #4d5ae5;
+}
 .textarea:focus {
 background-color: #4d5ae5;
     outline: transparent;
