@@ -703,9 +703,7 @@ border: 1px solid var(--white);
 /* Поля форми + іконки в полях */
 .form-field {
 padding: 72px 24px 24px 24px;
-position: relative;
 margin-bottom: 16px;
-width: 100%;
 }
 
 .form-label {
@@ -713,14 +711,18 @@ width: 100%;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: block;
+   
     margin-bottom: 4px;
 }
-.input-wrapper {
+.form-field .input-wrapper {
     position: relative;
     margin-bottom: 8px;
 }
 
+.form-field .textarea {
+    width: 100%;
+   
+}
 
 .input {
     height: 40px;
@@ -760,13 +762,13 @@ width: 100%;
 .input:focus + .input-icon {
     fill: #4d5ae5;
 }
+
 .textarea:focus {
 background-color: #4d5ae5;
     outline: transparent;
 }
 
 .textarea {
-
     height: 120px;
     resize: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -776,7 +778,6 @@ background-color: #4d5ae5;
     font-size: 12px;
     line-height: 1.17;
     outline: transparent;
-    width: 100%;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
