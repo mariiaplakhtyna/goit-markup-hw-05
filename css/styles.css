@@ -571,8 +571,10 @@ border: 1px solid var(--white);
     padding-left: 16px;
     color: #ffffff;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: 0.04em;
+    font-size: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-input::placeholder {
@@ -589,13 +591,14 @@ border: 1px solid var(--white);
     border: none;
     border-radius: 4px;
     padding: 8px 24px;
-    background-color: var(--iris);
+    background-color: #4d5ae5;
     color: #ffffff;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
 }
 
 .btn-form-subscribe:hover,
@@ -605,6 +608,7 @@ border: 1px solid var(--white);
 
 .icon-send {
     fill: #ffffff;
+    margin-left: 16px;
 }
 /* Бекдроп */
 .backdrop {
