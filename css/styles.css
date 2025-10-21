@@ -605,12 +605,12 @@ border: 1px solid var(--white);
 .btn-form-subscribe:focus {
     background-color: #31d0aa;
 }
-
+/* Бекдроп */
 .icon-send {
     fill: #ffffff;
     margin-left: 16px;
 }
-/* Бекдроп */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -723,7 +723,6 @@ width: 100%;
 
 
 .input {
-    width: 100%;
     height: 40px;
     padding-left: 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -767,7 +766,7 @@ background-color: #4d5ae5;
 }
 
 .textarea {
-    width: 100%;
+
     height: 120px;
     resize: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -777,6 +776,7 @@ background-color: #4d5ae5;
     font-size: 12px;
     line-height: 1.17;
     outline: transparent;
+    width: 100%;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
