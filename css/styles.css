@@ -77,7 +77,6 @@ button {
     margin-right: 76px;
     color: #4d5ae5;
     text-transform: uppercase;
-        margin-bottom: 16px;
 }
 
 .header-logo .logo-accent {
@@ -246,7 +245,7 @@ background-image:
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 0 8px 0;
+    margin: 0 8px 8px 0;
     overflow: hidden;
     text-align: left;
 }
@@ -401,7 +400,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 0 8px 0;
+    margin: 0 8px 8px 0;
     text-align: left;
     
 } 
@@ -467,8 +466,9 @@ padding: 100px 0;
 .footer-container {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
-    gap: 72px;
+}
+.footer-left {
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -493,11 +493,13 @@ padding: 100px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 0;
+    max-width: 264px;
    
 }
 /* ===F=ooter socials ===*/
 .footer-socials {
     text-align: left;
+    margin: auto;
 }
 .footer-socials-title {
     color: #ffffff;
@@ -585,7 +587,6 @@ border: 1px solid var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     min-width: 165px;
     height: 40px;
     border: none;
@@ -599,6 +600,7 @@ border: 1px solid var(--white);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.5;
+    margin: 0 0 0 16px;
 }
 
 .btn-form-subscribe:hover,
@@ -683,7 +685,7 @@ border: 1px solid var(--white);
 
 .modal-button-icon {
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   fill: currentColor;
+    fill: #ffffff;
 }
 
 .modal-button:hover .modal-button-icon,
@@ -702,7 +704,6 @@ border: 1px solid var(--white);
 
 /* Поля форми + іконки в полях */
 .form-field {
-padding: 72px 24px 24px 24px;
 margin-bottom: 8px;
 }
 
@@ -784,10 +785,13 @@ background-color: #4d5ae5;
     color: rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.textarea::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
 
 .textarea:focus {
     outline: none;
-    border-color: #4d5ae5;
+    
 }
 
 /* чекбокс */
@@ -820,9 +824,7 @@ background-color: #4d5ae5;
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         fill: transparent;
     }
-.checkbox-icon {
-    margin-bottom: 16px;
-}
+
 
 .policy-link {
     color: #4d5ae5;
@@ -850,6 +852,7 @@ background-color: #4d5ae5;
 
 .modal-submit:hover {
     fill: #ffffff;
+    
 }
 .modal-submit:focus {
     fill: #ffffff;
