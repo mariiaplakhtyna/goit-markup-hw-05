@@ -245,7 +245,7 @@ background-image:
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 0 8px 8px 0;
+    margin-bottom: 8px;
     overflow: hidden;
     text-align: left;
 }
@@ -400,7 +400,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 0 8px 8px 0;
+    margin-bottom: 8px;
     text-align: left;
     
 } 
@@ -475,7 +475,7 @@ padding: 100px 0;
     letter-spacing: 0.03m;
     margin-bottom: 16px;
     display: inline-block;
-    color: #4d5ae5;
+    color: #4D5AE5;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
