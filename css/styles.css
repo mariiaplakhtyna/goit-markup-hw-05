@@ -791,6 +791,7 @@ background-color: #4d5ae5;
 
 .textarea:focus {
     outline: none;
+    border-color: #4D5AE5;
     
 }
 
