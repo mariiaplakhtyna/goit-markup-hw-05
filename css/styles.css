@@ -831,6 +831,7 @@ margin-bottom: 8px;
         fill: transparent;
         flex-shrink: 0;
         background-color: transparent;
+        display: inline-flex;
     }
 .checkbox-input:checked + .checkbox-label .checkbox-box {
     background-color: #404bbf;
@@ -854,7 +855,7 @@ margin-bottom: 8px;
 
 /* кнопка */
 .modal-submit {
-    display: flex;
+    display: block;
     min-width: 169px;
     height: 56px;
     margin: auto;
