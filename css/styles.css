@@ -812,8 +812,14 @@ margin-bottom: 8px;
     align-items: center;
 }
 
+.checkbox-input:checked + .checkbox-label .checkbox-box {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
 
 .checkbox-box {
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -829,11 +835,7 @@ margin-bottom: 8px;
         
     }
 
-.checkbox-input:checked + .checkbox-label .checkbox-box {
-    background-color: #404bbf;
-    border: none;
-    fill: #f4f4fd;
-}
+
 
 .checkbox-icon {
     color: #F4F4FD;
