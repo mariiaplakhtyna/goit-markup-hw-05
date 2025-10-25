@@ -740,10 +740,7 @@ margin-bottom: 8px;
     outline: transparent;
     width: 100%;
 }
-.input:checked + .checkbox-box {
-    border: none;
-    fill: #f4f4fd;
-}
+
 
 .input-icon {
     position: absolute;
